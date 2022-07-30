@@ -1,0 +1,7 @@
+name = "worker-discord-template"
+workers_dev = true
+compatibility_date = "2022-06-24"
+node_compat = true
+
+[dev]
+ip = "0.0.0.0" # For global testing

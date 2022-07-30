@@ -20,7 +20,7 @@ export default class Hello implements CommandInteractionType {
     }
     handle: CommandInteractionHandler = async (interaction: APIApplicationCommandInteraction) => {
         interaction = interaction as APIChatInputApplicationCommandInteraction
-        const arg = (interaction.data.options?.[0] as APIApplicationCommandInteractionDataStringOption).value
+        const arg = (interaction.data.options?.[0] as APIApplicationCommandInteractionDataStringOption)?.value
         if (arg != null) {
             return {
                 type: InteractionResponseType.ChannelMessageWithSource,
